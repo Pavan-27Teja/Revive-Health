@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVIVE HEALTH</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="Stylesheet" href="/ReviveHEAlth/bmi.css">
+    <script src="/ReviveHEAlth/bmi.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+</head>
+<body>
+    <h1>REVIVE HEALTH</h1>
+    <div class="container">
+    <form>
+        <p></p>      </p><input type="text" id="Name" placeholder="Enter Your Name">
+        
+        <div class="radio" >
+        <input type="radio" id="Male" name="Gender"value="Male">
+            <label for="Male">Male</label>
+        <input type="radio" id="Female" name="Gender"value="Female">
+            <label for="Female">Female</label>
+        </div>
+        <input type="email" id="Email" placeholder="Enter your Email">
+        <input type="number" id="age" placeholder="Enter your Age">
+        <div id="sideDiv">
+        <p>Heigth:</p><input type="number" id="feet" placeholder="     Feet ">
+        <input type="number" id="inches" placeholder="Enter Your Height in inches">
+        </div>
+        <input type="number"  id="weight" placeholder="Enter your weight (Kilo Grams)">
+        <input type="number"  id="hip"  placeholder="Enter your Hip size in cm">
+        
+        <div class="dropdown">
+            <select name="activity" id="activity">
+                <option value="" selected disabled hidden>Activity</option>
+                <option value="0">No Exercise</option>
+                <option value="1">1-3 Days/week</option>
+                <option value="2">3-5 Days/week</option>
+                <option value="3">Everyday</option>
+              </select>
+          </div>
+          <button type="submit" onclick="send()">Submit</button>
+    </form>
+</div>
+</body>
+</html>
